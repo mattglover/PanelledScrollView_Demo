@@ -16,6 +16,10 @@
 		E2FB0EF81696D07900847956 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FB0EF71696D07900847956 /* Default.png */; };
 		E2FB0EFA1696D07900847956 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FB0EF91696D07900847956 /* Default@2x.png */; };
 		E2FB0EFC1696D07900847956 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FB0EFB1696D07900847956 /* Default-568h@2x.png */; };
+		E2FB0F061696D0AE00847956 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FB0F051696D0AE00847956 /* RootViewController.m */; };
+		E2FB0F091696D8DF00847956 /* UIColor+MoreColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FB0F081696D8DF00847956 /* UIColor+MoreColors.m */; };
+		E2FB0F4516977E2500847956 /* listBG.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FB0F4316977E2500847956 /* listBG.png */; };
+		E2FB0F4616977E2500847956 /* listBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FB0F4416977E2500847956 /* listBG@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,12 @@
 		E2FB0EF71696D07900847956 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E2FB0EF91696D07900847956 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E2FB0EFB1696D07900847956 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E2FB0F041696D0AE00847956 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		E2FB0F051696D0AE00847956 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		E2FB0F071696D8DF00847956 /* UIColor+MoreColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MoreColors.h"; sourceTree = "<group>"; };
+		E2FB0F081696D8DF00847956 /* UIColor+MoreColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MoreColors.m"; sourceTree = "<group>"; };
+		E2FB0F4316977E2500847956 /* listBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listBG.png; sourceTree = "<group>"; };
+		E2FB0F4416977E2500847956 /* listBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "listBG@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +88,8 @@
 		E2FB0EEB1696D07900847956 /* PanelScroll */ = {
 			isa = PBXGroup;
 			children = (
-				E2FB0EF41696D07900847956 /* AppDelegate.h */,
-				E2FB0EF51696D07900847956 /* AppDelegate.m */,
+				E2FB0F4116977DF200847956 /* Resources */,
+				E2FB0F021696D08500847956 /* UI */,
 				E2FB0EEC1696D07900847956 /* Supporting Files */,
 			);
 			path = PanelScroll;
@@ -88,6 +98,8 @@
 		E2FB0EEC1696D07900847956 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E2FB0EF41696D07900847956 /* AppDelegate.h */,
+				E2FB0EF51696D07900847956 /* AppDelegate.m */,
 				E2FB0EED1696D07900847956 /* PanelScroll-Info.plist */,
 				E2FB0EEE1696D07900847956 /* InfoPlist.strings */,
 				E2FB0EF11696D07900847956 /* main.m */,
@@ -97,6 +109,42 @@
 				E2FB0EFB1696D07900847956 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2FB0F021696D08500847956 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E2FB0F071696D8DF00847956 /* UIColor+MoreColors.h */,
+				E2FB0F081696D8DF00847956 /* UIColor+MoreColors.m */,
+				E2FB0F031696D08A00847956 /* RootViewController */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		E2FB0F031696D08A00847956 /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E2FB0F041696D0AE00847956 /* RootViewController.h */,
+				E2FB0F051696D0AE00847956 /* RootViewController.m */,
+			);
+			name = RootViewController;
+			sourceTree = "<group>";
+		};
+		E2FB0F4116977DF200847956 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2FB0F4216977DFC00847956 /* images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E2FB0F4216977DFC00847956 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E2FB0F4316977E2500847956 /* listBG.png */,
+				E2FB0F4416977E2500847956 /* listBG@2x.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +202,8 @@
 				E2FB0EF81696D07900847956 /* Default.png in Resources */,
 				E2FB0EFA1696D07900847956 /* Default@2x.png in Resources */,
 				E2FB0EFC1696D07900847956 /* Default-568h@2x.png in Resources */,
+				E2FB0F4516977E2500847956 /* listBG.png in Resources */,
+				E2FB0F4616977E2500847956 /* listBG@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +216,8 @@
 			files = (
 				E2FB0EF21696D07900847956 /* main.m in Sources */,
 				E2FB0EF61696D07900847956 /* AppDelegate.m in Sources */,
+				E2FB0F061696D0AE00847956 /* RootViewController.m in Sources */,
+				E2FB0F091696D8DF00847956 /* UIColor+MoreColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +293,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PanelScroll/PanelScroll-Prefix.pch";
 				INFOPLIST_FILE = "PanelScroll/PanelScroll-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -252,6 +305,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PanelScroll/PanelScroll-Prefix.pch";
 				INFOPLIST_FILE = "PanelScroll/PanelScroll-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -276,6 +330,7 @@
 				E2FB0F011696D07900847956 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
